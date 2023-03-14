@@ -46,13 +46,14 @@
     "@typescript-eslint/parser": "^5.51.0",
     "eslint": "^8.34.0",
     "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.1",
     "prettier": "2.8.4"
   },
-  "lint-staged":{
-    "**/*.{js,jsx,ts,tsx}":[
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
       "npx prettier --write",
       "npx eslint --fix"
     ]
